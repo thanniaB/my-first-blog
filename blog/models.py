@@ -6,6 +6,8 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
+    thumbnailClass = models.CharField(max_length=1)
+    thumbnail = models.CharField(max_length=200) #todo: update this to a real image upload
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank = True, null=True)
 
