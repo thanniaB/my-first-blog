@@ -63,6 +63,10 @@ header {
   width: 100%;
 }
 
+.post > div {
+  margin-bottom: 20px;
+}
+
 .class1 {
   width: 120px;
 }
